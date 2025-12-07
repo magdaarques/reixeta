@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 8px;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: BBBPoppins_regular;
+  src: url("../fonts/BBBPoppinsTN-DisplayRegular.otf");
+}
+.container {
+  font-family: BBBPoppins_regular;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+#ui {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0.5em;
+  background-color: rgb(251, 251, 251);
+  width: 25%;
+  flex-grow: 1;
+}
+main {
+  margin: 0 0 3em 0;
+}
+button {
+  margin: 2em 0 0 0;
+  padding: 1em;
+  font-size: 1.8em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+#selectsize {
+  padding: 0.3em;
+}
+#colorpicker,
+#selectsize {
+  height: 100%;
+  font-size: 1.7em;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+  border: 1px solid black;
+}
+p {
+  padding: 1em 2em 0.5em 2em;
+  font-size: 1.6em;
+}
+p a {
+  color: black;
+  border-bottom: 4px solid black;
+}
+p a:hover {
+  background-color: black;
+  color: white;
+}
+h1 {
+  margin-bottom: 2em;
+  font-size: 3em;
+  text-align: center;
+}
+label {
+  padding: 0.7em 0 0.2em 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.components {
+  margin: 1.8em 2.5em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#component_gradient {
+  display: flex;
+  flex-direction: column;
+}
+#component_gradient > [type="color"] {
+  height: 2em;
+  font-size: 1.7em;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid black;
+}
+#canvasWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 100%;
+  background-color: rgb(231, 231, 231);
+}

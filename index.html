@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>|-|R|E|i|X|E|T|A|-|</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="ui">
+        <h1>-|-| R E i X E T A |-|-</h1>
+        <main>
+          <p>
+            És una app que es basa en la idea de elaborar especimens personals i jugar amb els
+            caràcters. A partir d'una font creada a partir de l'escaneig d'una reixeta i d'una
+            estructura de grid a partir de la qual s'han elaborat totes les lletres.
+          </p>
+          <p>
+            Utilitzant com a base la creació tipogràfica dels primers ordinadors, a pixel on el
+            dibuix de la font i dels caràcters venen donat per el punxa i arrastra del mouse.
+          </p>
+          <p>
+            És un projecte a camí en entre l'estètica dels 80s dels primers ordinadors i la creació
+            tipogràfica i del vincle en la idea dels cartells de bancals, tanques, portes
+            improvisades i anuncis personals,... <a href="#">reixetes en ús</a>
+          </p>
+        </main>
+        <div class="components">
+          <label>canvas size</label>
+          <select id="selectsize">
+            <option value="1_1">1080 x 1080</option>
+            <option value="4_5">1080 x 1350</option>
+            <option value="9_16">1080 x 1920</option>
+            <option value="1_91_1">1080 x 566</option>
+          </select>
+        </div>
+        <div class="components">
+          <label>background</label>
+          <input type="color" id="colorpicker" value="#ffffff" />
+        </div>
+        <div id="component_gradient" class="components">
+          <label>gradient start color</label>
+          <input type="color" id="gradStart" value="#000000" />
+          <label>gradient end color</label>
+          <input type="color" id="gradEnd" value="#000000" />
+        </div>
+        <div class="components">
+          <button onclick="savePNG()">save PNG</button>
+        </div>
+      </div>
+      <div id="canvasWrapper"></div>
+    </div>
+    <script src="js/sketch_color.js"></script>
+  </body>
+</html>
