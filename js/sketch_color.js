@@ -45,7 +45,7 @@ let gradStartInput, gradEndInput;
 
 function preload() {
   imgReixeta = loadImage("../img/reixeta.png");
-  imgA = loadImage("../img/A.png");
+  imgA = loadImage("../img/lletraA.png");
   imgB = loadImage("../img/B.png");
   imgC = loadImage("../img/C.png");
   imgD = loadImage("../img/D.png");
