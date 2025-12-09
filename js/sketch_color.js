@@ -78,45 +78,6 @@ function preload() {
   imgO1 = loadImage("../img/O_t_5.png");
   imgO2 = loadImage("../img/O_o_6.png");
   imgU1 = loadImage("../img/U_t_7.png");
-
-  // Create gradient versions
-  let colStart = color(255, 0, 0); // red
-  let colEnd = color(255, 255, 0); // yellow
-
-  imgReixetaGrad = applyGradientToBW(imgReixeta, colStart, colEnd);
-  imgAGrad = applyGradientToBW(imgA, colStart, colEnd);
-  imgBGrad = applyGradientToBW(imgB, colStart, colEnd);
-  imgCGrad = applyGradientToBW(imgC, colStart, colEnd);
-  imgDGrad = applyGradientToBW(imgD, colStart, colEnd);
-  imgEGrad = applyGradientToBW(imgE, colStart, colEnd);
-  imgFGrad = applyGradientToBW(imgF, colStart, colEnd);
-  imgGGrad = applyGradientToBW(imgG, colStart, colEnd);
-  imgHGrad = applyGradientToBW(imgH, colStart, colEnd);
-  imgIGrad = applyGradientToBW(imgI, colStart, colEnd);
-  imgJGrad = applyGradientToBW(imgJ, colStart, colEnd);
-  imgKGrad = applyGradientToBW(imgK, colStart, colEnd);
-  imgLGrad = applyGradientToBW(imgL, colStart, colEnd);
-  imgMGrad = applyGradientToBW(imgM, colStart, colEnd);
-  imgNGrad = applyGradientToBW(imgN, colStart, colEnd);
-  imgOGrad = applyGradientToBW(imgO, colStart, colEnd);
-  imgPGrad = applyGradientToBW(imgP, colStart, colEnd);
-  imgQGrad = applyGradientToBW(imgQ, colStart, colEnd);
-  imgRGrad = applyGradientToBW(imgR, colStart, colEnd);
-  imgSGrad = applyGradientToBW(imgS, colStart, colEnd);
-  imgTGrad = applyGradientToBW(imgT, colStart, colEnd);
-  imgUGrad = applyGradientToBW(imgU, colStart, colEnd);
-  imgVGrad = applyGradientToBW(imgV, colStart, colEnd);
-  imgWGrad = applyGradientToBW(imgW, colStart, colEnd);
-  imgXGrad = applyGradientToBW(imgX, colStart, colEnd);
-  imgYGrad = applyGradientToBW(imgY, colStart, colEnd);
-  imgZGrad = applyGradientToBW(imgZ, colStart, colEnd);
-  imgA1Grad = applyGradientToBW(imgA1, colStart, colEnd);
-  imgE1Grad = applyGradientToBW(imgE1, colStart, colEnd);
-  imgE2Grad = applyGradientToBW(imgE2, colStart, colEnd);
-  imgI1Grad = applyGradientToBW(imgI1, colStart, colEnd);
-  imgO1Grad = applyGradientToBW(imgO1, colStart, colEnd);
-  imgO2Grad = applyGradientToBW(imgO2, colStart, colEnd);
-  imgU1Grad = applyGradientToBW(imgU1, colStart, colEnd);
 }
 
 function setup() {
@@ -130,44 +91,7 @@ function setup() {
   rectMode(CORNER);
   colorpicker = document.getElementById("colorpicker");
 
-  let colStart = color(255, 0, 0); // red
-  let colEnd = color(255, 255, 0); // yellow
-
-  imgAGrad = createGradientImage(imgA, colStart, colEnd);
-  imgBGrad = createGradientImage(imgB, colStart, colEnd);
-  imgCGrad = createGradientImage(imgC, colStart, colEnd);
-  imgDGrad = createGradientImage(imgD, colStart, colEnd);
-  imgEGrad = createGradientImage(imgE, colStart, colEnd);
-  imgFGrad = createGradientImage(imgF, colStart, colEnd);
-  imgGGrad = createGradientImage(imgG, colStart, colEnd);
-  imgHGrad = createGradientImage(imgH, colStart, colEnd);
-  imgIGrad = createGradientImage(imgI, colStart, colEnd);
-  imgJGrad = createGradientImage(imgJ, colStart, colEnd);
-  imgKGrad = createGradientImage(imgK, colStart, colEnd);
-  imgLGrad = createGradientImage(imgL, colStart, colEnd);
-  imgMGrad = createGradientImage(imgM, colStart, colEnd);
-  imgNGrad = createGradientImage(imgN, colStart, colEnd);
-  imgOGrad = createGradientImage(imgO, colStart, colEnd);
-  imgPGrad = createGradientImage(imgP, colStart, colEnd);
-  imgQGrad = createGradientImage(imgQ, colStart, colEnd);
-  imgRGrad = createGradientImage(imgR, colStart, colEnd);
-  imgSGrad = createGradientImage(imgS, colStart, colEnd);
-  imgTGrad = createGradientImage(imgT, colStart, colEnd);
-  imgUGrad = createGradientImage(imgU, colStart, colEnd);
-  imgVGrad = createGradientImage(imgV, colStart, colEnd);
-  imgWGrad = createGradientImage(imgW, colStart, colEnd);
-  imgXGrad = createGradientImage(imgX, colStart, colEnd);
-  imgYGrad = createGradientImage(imgY, colStart, colEnd);
-  imgZGrad = createGradientImage(imgZ, colStart, colEnd);
-  imgA1Grad = createGradientImage(imgA1, colStart, colEnd);
-  imgE1Grad = createGradientImage(imgE1, colStart, colEnd);
-  imgE2Grad = createGradientImage(imgE2, colStart, colEnd);
-  imgI1Grad = createGradientImage(imgI1, colStart, colEnd);
-  imgO1Grad = createGradientImage(imgO1, colStart, colEnd);
-  imgO2Grad = createGradientImage(imgO2, colStart, colEnd);
-  imgU1Grad = createGradientImage(imgU1, colStart, colEnd);
-  imgReixetaGrad = createGradientImage(imgReixeta, colStart, colEnd);
-
+  createAllGradients();
   // attach dropdown listener
   document.getElementById("selectsize").addEventListener("change", changeSize);
 }
