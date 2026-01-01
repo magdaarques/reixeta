@@ -8,12 +8,12 @@ let colorpicker;
 let selectedImg = null; // the image currently armed for placement
 let c;
 function preload() {
-  imgReixeta = loadImage("../img/reixeta.png");
-  imgA = loadImage("../img/A.png"); // your default image
-  imgE = loadImage("../img/E.png"); // image for key 'E'
-  imgI = loadImage("../img/I.png");
-  imgO = loadImage("../img/O.png");
-  imgU = loadImage("../img/U.png");
+  imgReixeta = loadImage("./img/reixeta.png");
+  imgA = loadImage("./img/A.png"); // your default image
+  imgE = loadImage("./img/E.png"); // image for key 'E'
+  imgI = loadImage("./img/I.png");
+  imgO = loadImage("./img/O.png");
+  imgU = loadImage("./img/U.png");
 }
 
 function setup() {
